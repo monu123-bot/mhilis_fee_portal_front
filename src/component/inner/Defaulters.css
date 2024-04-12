@@ -1,0 +1,20 @@
+.defaulters-container {
+    margin: 20px;
+    width: 80wv;
+    overflow: auto;
+    border-radius: 1px solid grey;
+  }
+  
+  .defaulters-table {
+    width: 100%;
+   
+  }
+  
+  .defaulters-table th, .defaulters-table td {
+    padding: 8px;
+    text-align: left;
+    
+  }
+  
+  
+  

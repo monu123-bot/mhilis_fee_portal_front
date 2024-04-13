@@ -1,3 +1,8 @@
 .copyright {
+    position: fixed; /* or 'absolute' depending on your layout */
+    bottom: 0;
+    width: 100%;
     text-align: center;
+    background-color: #f0f0f0; /* optional: add a background color for better visibility */
+    padding: 10px 0; /* optional: add padding for better spacing */
 }

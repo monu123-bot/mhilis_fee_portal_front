@@ -65,26 +65,29 @@ const showMessage = (msg)=>{
   return (
 
     <>
-
+<br/><br/><br/>
     {(!isLogin) ? ( <div className='container'>
+      <img src='/mhilis_edu_logo.webp' />
       <h2>Student Login Page</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email">Email:</label>
+          
           <input
             type="email"
             id="email"
             value={email}
             onChange={handleEmailChange}
+            placeholder='Email'
             required
           />
         </div>
         <div>
-          <label htmlFor="password">Password:</label>
+          
           <input
             type="password"
             id="password"
             value={password}
+            placeholder='Password'
             onChange={handlePasswordChange}
             required
           />

@@ -48,7 +48,7 @@ fetchTr()
         {transactions.map(transaction => (
           <tr key={transaction._id}>
             <td>{transaction._id}</td>
-            <td>{transaction.amount/100}</td>
+            <td>{transaction.amount}</td>
             <td>{transaction.student.email}</td>
             <td>{transaction.student.name}</td>
             <td>{transaction.student.phone}</td>

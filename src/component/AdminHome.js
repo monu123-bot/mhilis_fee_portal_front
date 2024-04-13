@@ -18,26 +18,7 @@ const AdminHome = ({setIsLogin}) => {
     const showMessage = (msg)=>{
         alert(msg)
     }
-    const createOrder = async()=>{
-        try {
-            const token = localStorage.getItem('adminToken')
-            console.log(token)
-      const response = await fetch(`${url}/admin/createOrders`, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `${token}`
-        },
-        
-      });
-      // console.log("cafes are",response)
-      if (response.status===200) {
-        showMessage('order created')
-    }
-        } catch (error) {
-            showMessage('error')
-        }
-    }
+    
     const fetchUser = async ()=>{
         try {
             const token = localStorage.getItem('adminToken')
@@ -75,9 +56,10 @@ console.log(data)
         <br/>
     <button onClick={()=>(setIsLogin(false))} >{user.name }Logout</button>
     <br/><br/>
-    <button onClick={()=>(createOrder())} >Create Fee Orders</button>
-    <Defaulters/>
+    
+   
     <Students/>
+    <Defaulters/>
     <Transactions/>
     <AddStudent courses={courses}  />
     <AddCourse courses={courses} setCourses={setCourses}  />

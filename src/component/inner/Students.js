@@ -6,7 +6,7 @@ const Students = () => {
   const [ordStudents,setOrdStudents] = useState([])
 const [students,setStudents] = useState([])
 const url = 'https://mhilis-fee-portal-backend-1.onrender.com'
-// const url = 'http://localhost:3000'
+
 const handleCheckboxChange = async (id)=>{
   const studentIndex = ordStudents.findIndex(student => student._id === id);
     if (studentIndex !== -1) {

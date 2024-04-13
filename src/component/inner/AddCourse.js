@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import axios  from 'axios';
-const AddCourse = () => {
+const AddCourse = ({courses,setCourses}) => {
     const url = 'https://mhilis-fee-portal-backend-1.onrender.com'
     const [name, setName] = useState('');
     const [fee, setFee] = useState('');
@@ -23,6 +23,7 @@ const AddCourse = () => {
       });
 
       if(resp.status===200){
+        
         setName('')
         setFee('')
         showMessage('course added')
